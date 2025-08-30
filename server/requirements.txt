@@ -1,0 +1,11 @@
+Flask
+flask-cors
+flask-pymongo
+flask-jwt-extended
+bcrypt
+numpy
+pandas
+scikit-learn
+seaborn
+gunicorn
+google-generativeai
