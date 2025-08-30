@@ -66,7 +66,7 @@ const CropYieldPredict = () => {
     const token = localStorage.getItem('token');
     try {
       const res = await axios.post(
-        'http://127.0.0.1:5000/cropyield-predict',
+        'https://farming2090-3.onrender.com/cropyield-predict',
         formData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
