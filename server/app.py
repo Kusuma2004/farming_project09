@@ -14,7 +14,7 @@ import bcrypt
 
 app = Flask(__name__)
 CORS(app)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/farmingDB"
+app.config["MONGO_URI"] = "mongodb+srv://ninnikommisetti_db_user:<db_password>@cluster0.xqx1kdu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 app.config["JWT_SECRET_KEY"] = "supersecretkey" 
 app.config["GOOGLE_API_KEY"]="AIzaSyB9Xc27FCSp4HprhjHnmr3tkMGox5ZIKkQ" # Use env var in prod!
 mongo = PyMongo(app)
