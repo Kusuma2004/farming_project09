@@ -35,7 +35,10 @@ genai.configure(api_key="AIzaSyCepHKr_tgW9sO1I6482ue6mqBRdeDj6c8")
 model = genai.GenerativeModel("models/gemini-1.5-flash")
 
 
-
+@app.route("/")
+def home():
+    return "Farming API is running!" 
+    
 @app.route("/ask", methods=["POST"])
 def chat():
     try:
