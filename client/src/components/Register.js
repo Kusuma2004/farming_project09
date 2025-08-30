@@ -18,7 +18,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://farming2090-3.onrender.com/api/auth/register", {
         name,
         email,
         password,
