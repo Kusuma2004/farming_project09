@@ -63,9 +63,9 @@ const Dashboard = ({ onLogout }) => {
         };
 
         const [cropRes, fertRes, yieldRes] = await Promise.all([
-          fetch("http://127.0.0.1:5000/api/crop-predictions", { headers }),
-          fetch("http://127.0.0.1:5000/api/fertilizer-recommendations", { headers }),
-          fetch("http://127.0.0.1:5000/api/yield-predictions", { headers }),
+          fetch("https://farming2090-3.onrender.com/api/crop-predictions", { headers }),
+          fetch("https://farming2090-3.onrender.com/api/fertilizer-recommendations", { headers }),
+          fetch("https://farming2090-3.onrender.com/api/yield-predictions", { headers }),
         ]);
 
         if (!cropRes.ok || !fertRes.ok || !yieldRes.ok) throw new Error("Failed to fetch data.");
