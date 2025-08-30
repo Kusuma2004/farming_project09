@@ -219,7 +219,7 @@ const CropForm = ({ onLogout }) => {
       {/* Footer */}
       <Box sx={{ bgcolor: "grey.900", color: "white", py: 2, textAlign: "center", ml: sidebarOpen ? "260px" : 0 }}>
         <Typography variant="body2">
-          © 2021 Copyright: Precision Agriculture Using Machine Learning & IOT
+          © 2021 Copyright: Precision Agriculture Using Machine Learning 
         </Typography>
         <Typography variant="body2">GO GREEN...</Typography>
       </Box>
