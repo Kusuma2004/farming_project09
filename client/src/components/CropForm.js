@@ -80,7 +80,7 @@ const CropForm = ({ onLogout }) => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch("https://farming2090-3.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify(formData),
